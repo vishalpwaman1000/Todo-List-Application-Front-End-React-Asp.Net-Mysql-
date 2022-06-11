@@ -1,0 +1,101 @@
+.Container {
+    height: inherit;
+    width: inherit;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+    .Sub-Container {
+        width: 1050px;
+        height: 580px;
+        // height: fit-content;
+        margin: 30px 0 0 0;
+        font-family: "Roboto";
+        font-weight: 500;
+
+        .Body1 {
+            height: 300px;
+            width: inherit;
+            background-color: white;
+            position: sticky;
+            box-shadow: 0 0 10px -2px black;
+
+            .Note {
+                width: 80%;
+                margin: 40px 0 0 10px;
+            }
+
+            .Date {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .Schedule-Date {
+                    margin: 45px 30px 40px 10px;
+                    width: 200px;
+                }
+
+                .Schedule-Time {
+                    margin: 45px 0 40px 10px;
+                    width: 200px;
+                }
+            }
+
+            .Done {
+                margin: 10px 0 0 0;
+                display: flex;
+                justify-content: space-around;
+                font-weight: 500;
+                .RadioGroup {
+                    display: flex;
+                    flex-direction: row;
+                }
+                .Button {
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+
+        .Body2 {
+            box-shadow: 0 0 10px -2px black;
+            .Data-flex {
+                background-color: white;
+                display: flex;
+                // margin: 5px 0 0 0;
+                height: 55px;
+                align-items: center;
+                padding: 0 5px 0 5px;
+                // border-bottom: 0.5px solid lightgrey;
+
+                .Notes {
+                    height: 20px;
+                    // flex: 6
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    cursor: pointer;
+                }
+
+                .Days {
+                    .PrivateSwitchBase-root-5 {
+                        padding: 0px;
+                    }
+                }
+            }
+        }
+    }
+
+    .Pagination {
+        width: inherit;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0 0 0;
+        .MuiPaginationItem-page.Mui-selected {
+            background-color: aliceblue;
+        }
+    }
+}
