@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./HomePage.scss";
+import "./HomePage.css";
 import ToDoListServices from "../services/ToDoListServices";
 import TextField from "@material-ui/core/TextField";
 import Pagination from "@material-ui/lab/Pagination";
@@ -18,7 +18,6 @@ import Popover from "@material-ui/core/Popover";
 import Checkbox from "@material-ui/core/Checkbox";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
-import { black } from "material-ui/styles/colors";
 
 const toDoListServices = new ToDoListServices();
 //
